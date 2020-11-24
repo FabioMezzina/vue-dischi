@@ -101,7 +101,7 @@ img {
 }
 
 .loader i {
-  font-size: 150px;
+  font-size: 200px;
   color: #1ed760;
   animation: load 1s linear infinite;
 }

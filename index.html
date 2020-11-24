@@ -22,7 +22,7 @@
     </section>
 
     <!-- Main content section -->
-    <main class="main-content" v-if="loaded">
+    <main class="main-content" v-if="cds.length > 0">
       <!-- Cd filter -->
       <div class="cd-filter mb50">
         Filter by:
@@ -30,11 +30,7 @@
                 v-model="filterGenre"
                 @change="filterAlbums"
         >
-          <option value="all">All</option>
-          <option value="rock">Rock</option>
-          <option value="metal">Metal</option>
-          <option value="pop">Pop</option>
-          <option value="jazz">Jazz</option>
+        <option v-for="genre in genres" :value="genre">{{ genre }}</option>
         </select>
       </div>
       <!-- Album -->
