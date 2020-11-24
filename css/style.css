@@ -3,3 +3,94 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+
+/* UTILITIES */
+img {
+  max-width: 100%;
+}
+
+.color-gray {
+  color: gray;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* SPOTIFY CD APP */
+#app {
+  min-height: 100vh;
+  background-color: #192d3c;
+}
+
+/* Logo header */
+.header {
+  padding: 10px 10px 5px;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.header img {
+  height: 50px;
+}
+
+/* Main content section */
+/* Cd filter */
+.cd-filter { 
+  text-align: center;
+}
+
+.cd-filter select {
+  margin-left: 10px;
+}
+
+/* Album */
+.album {
+  padding: 0 50px;
+  text-align: center;
+}
+
+.album-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.album-info {
+  margin: 10px 20px;
+  padding: 20px;
+  flex-basis: 200px;
+  background-color: rgba(255, 255, 255, .1);
+  cursor: pointer;
+  transition: .15s;
+}
+
+.album-info:hover {
+  box-shadow: 3px 3px 5px rgba(255, 255, 255, .4);
+  transform: scale(1.05);
+}
+
+.image-wrapper {
+  min-height: 180px;
+}
+
+.album-info .album-title {
+  font-size: 22px;
+}
+
+.album-info .album-author {
+  font-size: 20px;
+}
