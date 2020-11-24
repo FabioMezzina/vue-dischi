@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vue dischi</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'/>
   <!-- Styles -->
   <link rel="stylesheet" href="./css/style.css">
   <!-- Vue.js -->
@@ -20,7 +22,7 @@
     </section>
 
     <!-- Main content section -->
-    <main class="main-content">
+    <main class="main-content" v-if="loaded">
       <!-- Cd filter -->
       <div class="cd-filter mb50">
         Filter by:
@@ -50,6 +52,10 @@
         </ul>
       </section>
     </main>
+    <!-- Loader -->
+    <div class="loader" v-else>
+      <i class="fas fa-compact-disc"></i>
+    </div>
   </div>
 
   <!-- Axios library -->

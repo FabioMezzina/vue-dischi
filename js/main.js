@@ -4,6 +4,11 @@ const app = new Vue({
     cds: [],
     filterGenre: 'all'
   }, // >_ End Data
+  computed: {
+    loaded() {
+        return this.cds.length > 0;
+    }
+  },
   created() {
     this.filterAlbums();
   },
